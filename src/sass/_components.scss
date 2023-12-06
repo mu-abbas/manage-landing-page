@@ -1,0 +1,50 @@
+.nav-links {
+  display: flex;
+  gap: 3.2rem;
+
+  &-child {
+    list-style: none;
+
+    & a:hover {
+      transform: scale(1.02);
+    }
+
+    & a:active {
+      transform: scale(0.98);
+    }
+  }
+}
+
+.btn {
+  border: none;
+  border-radius: 100rem;
+  padding: 1.5rem 3rem;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  &:active {
+    transform: scale(0.99);
+  }
+
+  &-dark {
+    background-color: $bright-red;
+    box-shadow: 0 1rem 3rem -1.1rem $brighter-red;
+
+    &:hover {
+      background-color: $brighter-red;
+      box-shadow: 0 1rem 4rem -1.1rem $brighter-red;
+    }
+
+    &:active {
+      box-shadow: 0 1rem 2rem -1.1rem $brighter-red;
+    }
+  }
+
+  &-light {
+    background-color: $white;
+  }
+}
