@@ -10,6 +10,7 @@ html {
 }
 body {
   background-color: $white;
+  overflow: hidden;
 }
 main {
   display: block;
@@ -20,10 +21,6 @@ footer,
   max-width: $desktop-width;
   min-width: $mobile-width;
 }
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
 hr {
   box-sizing: content-box;
   height: 0;
@@ -33,7 +30,8 @@ pre {
   font-family: monospace, monospace;
   font-size: 1em;
 }
-a {
+a,
+img {
   background-color: transparent;
   display: inline-block;
   transition: all 0.2s;

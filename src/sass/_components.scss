@@ -48,3 +48,49 @@
     background-color: $white;
   }
 }
+
+.logo {
+  line-height: 0;
+  margin-top: 0.5rem;
+}
+
+.hero {
+  &-heading {
+    width: 44.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & .primary-heading {
+      margin-bottom: 1.6rem;
+    }
+
+    & .paragraph {
+      width: 35rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &-graphs {
+    @include center;
+    width: 54rem;
+    position: relative;
+
+    & img {
+      max-height: 100%;
+    }
+
+    &::after {
+      content: '';
+      background-color: $very-pale-red;
+      position: absolute;
+      width: 43.6rem;
+      height: 108rem;
+      border-radius: 100rem;
+      top: -52rem;
+      right: -15rem;
+      z-index: -1;
+      transform: rotate(45deg);
+    }
+  }
+}

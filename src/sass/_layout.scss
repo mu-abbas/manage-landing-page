@@ -1,14 +1,21 @@
 .header {
   display: flex;
   flex-direction: column;
-  gap: $section-space;
-  justify-content: space-between;
+  align-items: center;
+  gap: 8rem;
   padding: 5.6rem 16.5rem 0;
+  position: relative;
 }
 
 .nav {
   display: flex;
-  flex-basis: 100%;
+  width: 100%;
+  flex-grow: 0;
   justify-content: space-between;
   align-items: center;
+}
+
+.hero {
+  @include center;
+  gap: 12.5rem;
 }
