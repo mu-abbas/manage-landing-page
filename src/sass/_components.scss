@@ -94,3 +94,64 @@
     }
   }
 }
+
+.about {
+  position: relative;
+
+  &::after {
+    content: '';
+    background-color: $very-pale-red;
+    position: absolute;
+    width: 43.6rem;
+    height: 108rem;
+    border-radius: 100rem;
+    bottom: -75rem;
+    left: -40rem;
+    z-index: -1;
+    transform: rotate(45deg);
+  }
+
+  &-heading {
+    width: 44.5rem;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 2.4rem;
+    & .paragraph {
+      width: 75%;
+    }
+  }
+
+  &-list {
+    width: 54rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.2rem;
+
+    &-item {
+      display: flex;
+      gap: 2.8rem;
+
+      &-number {
+        background-color: $bright-red;
+        padding: 0.75rem 2rem;
+        margin-top: -0.5rem;
+        border-radius: 100rem;
+        align-self: flex-start;
+      }
+
+      &-data {
+        display: flex;
+        flex-direction: column;
+        gap: 1.9rem;
+      }
+    }
+  }
+}
+
+.testimonials {
+  &-blocks {
+    @include center;
+    gap: 3rem;
+  }
+}

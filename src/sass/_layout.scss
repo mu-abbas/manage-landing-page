@@ -5,6 +5,12 @@
   gap: 8rem;
   padding: 5.6rem 16.5rem 0;
   position: relative;
+  overflow: hidden;
+}
+
+.main {
+  @include center;
+  flex-direction: column;
 }
 
 .nav {
@@ -18,4 +24,19 @@
 .hero {
   @include center;
   gap: 12.5rem;
+}
+
+.about {
+  @include center;
+  gap: 12.5rem;
+  padding: 12rem 16.5rem 0;
+}
+
+.testimonials {
+  padding: 12rem 16.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  overflow: hidden;
 }

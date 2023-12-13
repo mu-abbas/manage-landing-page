@@ -38,6 +38,27 @@ body {
   letter-spacing: -0.1rem;
 }
 
+.secondary-heading {
+  color: #242d52;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.4rem;
+  letter-spacing: -0.0714rem;
+}
+
+.tertiary-heading {
+  color: #242d52;
+  font-weight: 700;
+  letter-spacing: -0.0286rem;
+}
+
+.about-list-item-number {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.0286rem;
+}
+
 .paragraph {
   color: $dark-blue;
   line-height: 2.6rem;
