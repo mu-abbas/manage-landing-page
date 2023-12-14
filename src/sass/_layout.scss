@@ -11,6 +11,7 @@
 .main {
   @include center;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .nav {
@@ -22,6 +23,7 @@
 }
 
 .hero {
+  width: 100%;
   @include center;
   gap: 12.5rem;
 }
@@ -38,9 +40,18 @@
   flex-direction: column;
   align-items: center;
   gap: 6rem;
-  overflow: hidden;
 }
 
 .cta {
   height: 22rem;
+}
+
+.footer {
+  @include center;
+  height: 25rem;
+
+  & .container {
+    width: 144rem;
+    padding: 6.2rem 16.5rem;
+  }
 }

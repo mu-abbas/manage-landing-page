@@ -235,3 +235,52 @@
     width: 44.5rem;
   }
 }
+
+.footer {
+  background-color: $black;
+  & .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .logo-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  & .social-area {
+    @include center;
+    gap: 1.1rem;
+
+    a:hover,
+    a:active {
+      transform: scale(1.05);
+      svg path {
+        fill: $bright-red;
+      }
+    }
+
+    a:active {
+      transform: scale(0.95);
+    }
+  }
+
+  & .site-map {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &-item {
+      width: 50%;
+      &:not(:last-child) {
+        margin-bottom: 1.3rem;
+      }
+    }
+  }
+}
+
+svg path {
+  transition: all 0.2s;
+}
