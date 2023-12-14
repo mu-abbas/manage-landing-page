@@ -29,14 +29,18 @@
 .about {
   @include center;
   gap: 12.5rem;
-  padding: 12rem 16.5rem 0;
+  padding: 12.8rem 16.5rem 0;
 }
 
 .testimonials {
-  padding: 12rem 16.5rem 0;
+  padding: 12.8rem 16.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 6rem;
   overflow: hidden;
+}
+
+.cta {
+  height: 22rem;
 }

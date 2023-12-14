@@ -46,6 +46,14 @@
 
   &-light {
     background-color: $white;
+
+    &:hover {
+      box-shadow: 0 1rem 4rem -1.1rem $very-pale-red;
+    }
+
+    &:active {
+      box-shadow: 0 1rem 2rem -1.1rem $very-pale-red;
+    }
   }
 }
 
@@ -153,5 +161,77 @@
   &-blocks {
     @include center;
     gap: 3rem;
+    margin-top: 4rem;
+
+    &-item {
+      position: relative;
+      padding: 6rem 4rem 4rem;
+      width: 54rem;
+      background-color: $very-light-gray;
+      border-radius: 0.2rem;
+
+      & img {
+        position: absolute;
+        top: 0;
+        right: 50%;
+        width: 7.2rem;
+        transform: translate(50%, -50%);
+      }
+
+      &-quote {
+        @include center;
+        flex-direction: column;
+        gap: 1.9rem;
+      }
+    }
+  }
+}
+
+.cta {
+  @include center;
+  background-color: $bright-red;
+  min-width: 100vw;
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: '';
+    background-color: $very-pale-red;
+    position: absolute;
+    width: 36rem;
+    height: 108rem;
+    border-radius: 100rem;
+    bottom: -9rem;
+    right: -26rem;
+    z-index: 1;
+    transform: rotate(45deg);
+    opacity: 0.06;
+  }
+
+  &::before {
+    content: '';
+    background-color: $very-pale-red;
+    position: absolute;
+    width: 36rem;
+    height: 108rem;
+    border-radius: 100rem;
+    bottom: -72rem;
+    left: 20rem;
+    z-index: 1;
+    transform: rotate(45deg);
+    opacity: 0.06;
+  }
+
+  &-container {
+    width: 144rem;
+    padding: 6.2rem 16.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  & .secondary-heading {
+    width: 44.5rem;
   }
 }
