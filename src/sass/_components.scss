@@ -48,11 +48,11 @@
     background-color: $white;
 
     &:hover {
-      box-shadow: 0 1rem 4rem -1.1rem $very-pale-red;
+      box-shadow: 0 1rem 4rem -1.1rem #fff0ec70;
     }
 
     &:active {
-      box-shadow: 0 1rem 2rem -1.1rem $very-pale-red;
+      box-shadow: 0 1rem 2rem -1.1rem #fff0ec70;
     }
   }
 }
@@ -243,11 +243,19 @@
     justify-content: space-between;
   }
 
-  & .logo-area {
+  & .logo-area,
+  & .form-area {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  & .logo-area {
     align-items: flex-start;
+  }
+
+  & .form-area {
+    align-items: flex-end;
   }
 
   & .social-area {
@@ -277,6 +285,37 @@
       &:not(:last-child) {
         margin-bottom: 1.3rem;
       }
+    }
+  }
+}
+
+.form-area {
+  .email-subscription {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    input {
+      width: 20rem;
+      height: 4.4rem;
+      border-radius: 100rem;
+      border: none;
+      padding: 1rem 2rem;
+    }
+  }
+
+  .btn {
+    box-shadow: none;
+
+    &:hover,
+    &:active {
+      box-shadow: none;
+    }
+    &:hover {
+      box-shadow: 0 1rem 4rem -1.1rem #fff0ec30;
+    }
+
+    &:active {
+      box-shadow: 0 1rem 2rem -1.1rem #fff0ec30;
     }
   }
 }

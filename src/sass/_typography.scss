@@ -93,3 +93,15 @@ body {
 cite {
   font-style: normal;
 }
+
+.copy-right {
+  color: $very-light-gray;
+  font-size: 1.3rem;
+  letter-spacing: -0.0203rem;
+}
+
+.form-area {
+  input {
+    color: $dark-grayish-blue;
+  }
+}
