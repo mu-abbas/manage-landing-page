@@ -1,38 +1,38 @@
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8rem;
-  padding: 5.6rem 16.5rem 0;
-  position: relative;
-  overflow: hidden;
+.wrapper {
+  width: 90vw;
+  max-width: $desktop-width;
+  margin: 0 auto;
 }
 
-.main {
-  @include center;
-  flex-direction: column;
-  overflow: hidden;
+.header {
+  padding-top: 5.6rem;
 }
 
 .nav {
   display: flex;
-  width: 100%;
-  flex-grow: 0;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 .hero {
-  width: 100%;
-  @include center;
-  gap: 12.5rem;
+  &-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.main {
+  overflow: hidden;
 }
 
 .about {
-  @include center;
-  gap: 12.5rem;
-  padding: 12.8rem 16.5rem 0;
+  &-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
 }
+
+// >>>>>>>>> refactoring ...
 
 .testimonials {
   padding: 12.8rem 16.5rem;
