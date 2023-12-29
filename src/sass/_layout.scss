@@ -6,12 +6,15 @@
 
 .header {
   padding-top: 5.6rem;
+  overflow: hidden;
 }
 
 .nav {
+  width: 80%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
 
 .hero {
@@ -28,17 +31,13 @@
 .about {
   &-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 }
 
-// >>>>>>>>> refactoring ...
-
 .testimonials {
-  padding: 12.8rem 16.5rem;
-  display: flex;
+  @include center;
   flex-direction: column;
-  align-items: center;
   gap: 6rem;
 }
 
@@ -47,11 +46,6 @@
 }
 
 .footer {
-  @include center;
   height: 25rem;
-
-  & .container {
-    width: 144rem;
-    padding: 6.2rem 16.5rem;
-  }
+  @include center;
 }

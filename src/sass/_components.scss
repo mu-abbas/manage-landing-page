@@ -3,8 +3,6 @@
   gap: 3.2rem;
 
   &-child {
-    list-style: none;
-
     & a:hover {
       transform: scale(1.02);
     }
@@ -19,8 +17,9 @@
   border: none;
   border-radius: 100rem;
   padding: 1.5rem 3rem;
-  transition: all 0.2s;
   cursor: pointer;
+  position: relative;
+  z-index: 10;
 
   &:hover {
     transform: scale(1.01);
@@ -58,34 +57,25 @@
 }
 
 .logo {
-  line-height: 0;
   margin-top: 0.5rem;
 }
 
 .hero {
   &-heading {
-    width: 44.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    & .primary-heading {
-      margin-bottom: 1.6rem;
-    }
+    width: 30%;
+    margin: auto 0;
 
     & .paragraph {
-      width: 35rem;
-      margin-bottom: 4rem;
+      width: 80%;
     }
   }
 
   &-graphs {
-    @include center;
-    width: 54rem;
+    width: 40%;
     position: relative;
 
     & img {
-      max-height: 100%;
+      width: 100%;
     }
 
     &::after {
@@ -120,18 +110,14 @@
   }
 
   &-heading {
-    width: 44.5rem;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    gap: 2.4rem;
+    width: 30%;
     & .paragraph {
-      width: 75%;
+      width: 80%;
     }
   }
 
   &-list {
-    width: 54rem;
+    width: 40%;
     display: flex;
     flex-direction: column;
     gap: 4.2rem;
@@ -159,14 +145,14 @@
 
 .testimonials {
   &-blocks {
-    @include center;
+    display: flex;
     gap: 3rem;
-    margin-top: 4rem;
 
     &-item {
       position: relative;
       padding: 6rem 4rem 4rem;
-      width: 54rem;
+      width: 30vw;
+      max-width: 54rem;
       background-color: $very-light-gray;
       border-radius: 0.2rem;
 
@@ -190,7 +176,6 @@
 .cta {
   @include center;
   background-color: $bright-red;
-  min-width: 100vw;
   overflow: hidden;
   position: relative;
 
@@ -222,23 +207,22 @@
     opacity: 0.06;
   }
 
-  &-container {
-    width: 144rem;
-    padding: 6.2rem 16.5rem;
+  &-wrapper {
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-shrink: 0;
   }
 
   & .secondary-heading {
-    width: 44.5rem;
+    width: 45%;
   }
 }
 
 .footer {
   background-color: $black;
-  & .container {
+  &-wrapper {
+    width: 80%;
     display: flex;
     justify-content: space-between;
   }
@@ -278,13 +262,12 @@
   & .site-map {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    width: 25%;
 
-    &-item {
-      width: 50%;
-      &:not(:last-child) {
-        margin-bottom: 1.3rem;
-      }
+    &-column {
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
     }
   }
 }
