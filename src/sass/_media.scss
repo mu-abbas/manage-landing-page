@@ -1,8 +1,59 @@
+// tablet landscape
 @media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .primary-heading {
+    font-size: #{fluid(26px, 40px, 900px, 1200px)};
+  }
+
+  .secondary-heading {
+    font-size: #{fluid(24px, 32px, 900px, 1200px)};
+  }
+
+  .cta::before {
+    display: none;
+  }
 }
 
+//tablet portrait && mobile landscape
 @media only screen and (max-width: 56.25em) {
 }
 
+// mobile portrait
 @media only screen and (max-width: 43.75em) {
+}
+
+// high resolution screens
+@media screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+// fluid typography
+@media screen and (min-width: 75em) {
+  .primary-heading {
+    font-size: #{fluid(40px, 48px, 1200px, 1450px)};
+  }
+
+  .secondary-heading {
+    font-size: #{fluid(22px, 30px, 900px, 1200px)};
+  }
+}
+
+// custom media queries
+@media screen and (max-width: 1600px) {
+  .hero-graphs::after {
+    height: 100vw;
+    bottom: -20%;
+    left: 80%;
+  }
+}
+
+@media screen and (max-width: 988px) {
+  .hero-graphs::after {
+    bottom: -3vw;
+  }
 }

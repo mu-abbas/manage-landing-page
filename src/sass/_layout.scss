@@ -48,4 +48,5 @@
 .footer {
   height: 25rem;
   @include center;
+  overflow: hidden;
 }
