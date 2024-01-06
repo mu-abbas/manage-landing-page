@@ -304,3 +304,40 @@
 svg path {
   transition: all 0.2s;
 }
+
+.nav-btn {
+  width: 2.5rem;
+  background-color: transparent;
+  border: none;
+  @include center;
+  cursor: pointer;
+  height: 1.8rem;
+
+  .nav-btn-display {
+    width: 2.5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.4rem solid $dark-blue;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 2.5rem;
+      position: absolute;
+      border-bottom: 0.4rem solid $dark-blue;
+      left: 0;
+      top: -0.7rem;
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 2.5rem;
+      position: absolute;
+      border-bottom: 0.4rem solid $dark-blue;
+      left: 0;
+      bottom: -1.1rem;
+    }
+  }
+}
